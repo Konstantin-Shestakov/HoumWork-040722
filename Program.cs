@@ -5,23 +5,48 @@
 
 // 2, 4 -> 16
 
+// double Stepen (int A, int B)
+// {
+// double N = Math.Pow(A, B);
+// return (N);
+
+// }
+// Console.WriteLine("Введите положительное целое число раз возведения числа А в степень,   ");
+// int j = Convert.ToInt32(Console.ReadLine());
+// for (int i = 0; i < j; i++)
+// {
+// Console.WriteLine("Введите положительное целое число А,   ");
+// int Number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите положительное целое число степени, в которую возводим А,   ");
+// int Num = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine(Number + "," + Num + " -> " + Stepen(Number, Num)); 
+//}
 double Stepen (int A, int B)
 {
-double N = Math.Pow(A, B);
+    int N = 1;
+    for (int i=1; i <= B; i++)
+{
+    N=N*A;
+     
+     
+   
+
+}
 return (N);
 
 }
-Console.WriteLine("Введите положительное целое число раз возведения числа А в степень,   ");
-int j = Convert.ToInt32(Console.ReadLine());
-for (int i = 0; i < j; i++)
+//Console.WriteLine("Введите положительное целое число раз возведения числа А в степень,   ");
+//int j = Convert.ToInt32(Console.ReadLine());
+//for (int i = 0; i < j; i++)
 {
 Console.WriteLine("Введите положительное целое число А,   ");
 int Number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите положительное целое число степени, в которую возводим А,   ");
 int Num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(Number + "," + Num + " -> " + Stepen(Number, Num)); 
-}
+Console.WriteLine(Number + "," + Num + " -> " + Stepen(Number, Num));
+} 
 
 
 
